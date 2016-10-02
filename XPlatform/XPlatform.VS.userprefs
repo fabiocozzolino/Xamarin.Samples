@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="XPlatform.Droid/XPlatform.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|Mixed Platforms" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="XPlatform.Core/FormsServices.cs">
+    <Files>
+      <File FileName="XPlatform.Core/App.cs" Line="1" Column="1" />
+      <File FileName="XPlatform.Core/FormsServices.cs" Line="11" Column="23" />
+      <File FileName="XPlatform.Droid/Resources/values/Strings.xml" Line="1" Column="1" />
+      <File FileName="XPlatform.Droid/XPlatformApplication.cs" Line="1" Column="1" />
+      <File FileName="XPlatform.Droid/Resources/values/Themes.xml" Line="1" Column="1" />
+      <File FileName="XPlatform.iOS/AppDelegate.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

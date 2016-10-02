@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{3BA3021D-32CB-4B94-AE9B-6EC80C4E3A52}|Default">
+  <MonoDevelop.Ide.ItemProperties.PartialApp.Droid PreferredExecutionTarget="Android.Nexus 5 (Lollipop)" MonoForAntroid.PreferredDevice="Nexus 4" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PartialApp.Droid/Shared/PlatformService.cs">
+    <Files>
+      <File FileName="PartialApp.iOS/AppDelegate.cs" Line="48" Column="1" />
+      <File FileName="PartialApp.iOS/PartialApp.iOSViewController.cs" Line="58" Column="1" />
+      <File FileName="PartialApp.iOS/Shared/PlatformService.cs" Line="10" Column="31" />
+      <File FileName="PartialApp.Droid/Shared/PlatformService.cs" Line="13" Column="2" />
+      <File FileName="PartialApp.Droid/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="PartialApp.Shared/PlatformService.cs" Line="10" Column="45" />
+      <File FileName="PartialApp.iOS/Info.plist" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.PartialApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FA16058B-D008-4F48-9C8C-E0BC8079133E" />
+</Properties>

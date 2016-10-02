@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TabbedPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:XPlatform.Core.Controls;assembly=XPlatform.Core"
+    xmlns:vm="clr-namespace:XPlatform.Core.ViewModels;assembly=XPlatform.Core"
+    x:Class="XPlatform.Core.Views.MainView"
+    Title="{Binding Title}">
+
+    <TabbedPage.BindingContext>
+    	<vm:MainViewModel />
+    </TabbedPage.BindingContext>
+
+    <TabbedPage.Children>
+    	<ContentPage Icon="icon_book.png" Title="{Binding BookSectionTitle}">
+
+		    <ContentPage.Content>
+		       <StackLayout>
+
+		    		<SearchBar 
+		    			Placeholder="cerca" TextColor="Black" CancelButtonColor="Black"
+						  	Text="{Binding Path=SearchText, Mode=TwoWay}" 
+						  	SearchCommand="{Binding SearchCommand}">
+						<SearchBar.Triggers>
+			        		<EventTrigger Event="TextChanged">
+			        			<EventTrigger.Actions>
+			        				<controls:EventToCommand>
+			        					<controls:EventToCommand.Delegate>
+			        						<controls:EventToCommandDelegate Command="{Binding SearchCommand}" CommandParameter="{Binding SearchText}" />
+			        					</controls:EventToCommand.Delegate>
+			        				</controls:EventToCommand>
+			        			</EventTrigger.Actions>
+			        		</EventTrigger>
+			        	</SearchBar.Triggers>
+					</SearchBar>
+
+			        <ListView ItemsSource="{Binding Books}" SelectedItem="{Binding SelectedBook}">
+			        	<ListView.Triggers>
+			        		<EventTrigger Event="ItemTapped">
+			        			<EventTrigger.Actions>
+			        				<controls:EventToCommand>
+			        					<controls:EventToCommand.Delegate>
+			        						<controls:EventToCommandDelegate Command="{Binding BookSelectedCommand}" CommandParameter="{Binding SelectedBook}" />
+			        					</controls:EventToCommand.Delegate>
+			        				</controls:EventToCommand>
+			        			</EventTrigger.Actions>
+			        		</EventTrigger>
+			        	</ListView.Triggers>
+			       
+						 <ListView.ItemTemplate>
+						    <DataTemplate>
+						      <TextCell Text="{Binding Title}" Detail="{Binding Author}"/>
+						    </DataTemplate>
+						  </ListView.ItemTemplate>
+
+					</ListView>
+
+				</StackLayout>
+		    </ContentPage.Content>
+		</ContentPage>
+
+		<ContentPage Icon="icon_man.png"
+    Title="{Binding AuthorSectionTitle}">
+    <ContentPage.Content>
+
+		<ListView ItemsSource="{Binding Path=Authors}" SelectedItem="{Binding SelectedAuthor}">
+			        	<ListView.Triggers>
+			        		<EventTrigger Event="ItemTapped">
+			        			<EventTrigger.Actions>
+			        				<controls:EventToCommand>
+			        					<controls:EventToCommand.Delegate>
+			        						<controls:EventToCommandDelegate Command="{Binding AuthorSelectedCommand}" CommandParameter="{Binding SelectedAuthor}" />
+			        					</controls:EventToCommand.Delegate>
+			        				</controls:EventToCommand>
+			        			</EventTrigger.Actions>
+			        		</EventTrigger>
+			        	</ListView.Triggers>
+			 <ListView.ItemTemplate>
+			    <DataTemplate>
+			      <TextCell Text="{Binding Name}" />
+			    </DataTemplate>
+			  </ListView.ItemTemplate>
+		</ListView>
+
+    </ContentPage.Content></ContentPage>
+    </TabbedPage.Children>
+</TabbedPage>
+

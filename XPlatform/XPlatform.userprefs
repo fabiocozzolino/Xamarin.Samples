@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{00E97DC9-60A9-4F86-A5AC-EF70B2501EA3}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XPlatform.Core/ViewModels/MainViewModel.cs">
+    <Files>
+      <File FileName="XPlatform.Core/Views/BookView.xaml.cs" Line="28" Column="4" />
+      <File FileName="XPlatform.Droid/MainActivity.cs" Line="47" Column="1" />
+      <File FileName="XPlatform.iOS/Info.plist" />
+      <File FileName="XPlatform.Core/ViewModels/MainViewModel.cs" Line="108" Column="15" />
+      <File FileName="XPlatform.Core/DelegateCommand.cs" Line="33" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Targets.XPlatform.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus 4 (Marshmallow)" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Targets.XPlatform.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8168E39A-A993-47B3-A9CF-1251804B29D7" />
+</Properties>
